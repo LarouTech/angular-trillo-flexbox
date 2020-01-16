@@ -13,7 +13,7 @@
 .overview {
   border-bottom: var(--line);
   align-items: center;
-  display: flex;  
+  display: flex;
 
   &__heading {
     font-size: 2.25rem;
@@ -44,12 +44,20 @@
       width: 1.5rem;
       height: 1.5rem;
     }
+
+    @media only screen and (max-width: $phone) {
+      display: none;
+    }
   }
 
   &__location {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $phone) {
+      display: none;
+    }
   }
 
   &__pin-icon {
