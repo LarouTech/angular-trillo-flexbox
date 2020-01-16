@@ -16,8 +16,17 @@
   --shadow-light: 0 2rem 5rem rgba(0,0,0, .06);
 
   --line: .1rem solid var(--color-grey-light-2);
-
 }
+
+$bp-largest: 75em;  //1200px
+$bp-large: 68.75em;  //1100px
+$bp-medium: 56.25em;  //900px
+$bp-small: 37.5em;  //600px
+$bp-smallest: 31.5em;  //500px
+
+
+
+
 
 * {
   margin: 0;
@@ -44,4 +53,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 110vh;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
+
 }
